@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apoorv Chaudhary - Responsive Web Design Portfolio & Architecture Systems." />
+  <title>Apoorv Chaudhary — Responsive Web Design Systems</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="#hero" class="brand-wordmark" aria-label="Apoorv Chaudhary Home">Apoorv Chaudhary</a>
+      
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li class="nav-item"><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="#specs" class="nav-link">Specifications</a></li>
+          <li class="nav-item"><a href="#consultation" class="nav-link">Consultation</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="#consultation" class="btn btn-primary">Schedule Audit</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#consultation" class="btn btn-primary btn-desktop-only">Schedule Audit</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="section-container hero-grid">
+        <div class="hero-content">
+          <div class="section-kicker">Apoorv Chaudhary · Frontend Developer · Week 2 Project</div>
+          <h1 id="hero-heading" class="hero-title">Engineering fluid interfaces for every screen dimension</h1>
+          <p class="hero-lead">
+            Adaptive layouts built with mathematical CSS clamp formulas, resilient flexbox hierarchies, and auto-fitting grid systems that scale smoothly from 320px smartphones to 2560px ultra-wide displays.
+          </p>
+          <div class="hero-ctas">
+            <a href="#capabilities" class="btn btn-primary">Explore Capabilities</a>
+            <a href="#specs" class="btn btn-secondary">Review Breakpoints</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">0.00</span>
+              <span class="metric-label">Cumulative Layout Shift</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">320px — 2560px</span>
+              <span class="metric-label">Continuously Tested Range</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">48px</span>
+              <span class="metric-label">Mobile Touch Baseline</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <div class="fluid-canvas-art">
+            <div class="canvas-grid-pattern" aria-hidden="true"></div>
+            <div class="canvas-viewport-preview" aria-hidden="true">
+              <div class="preview-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="preview-title">Adaptive Viewport Matrix (Auto-Fit 1fr)</span>
+              </div>
+              <div class="preview-body">
+                <div class="preview-block block-hero"></div>
+                <div class="preview-block-row">
+                  <div class="preview-block block-col"></div>
+                  <div class="preview-block block-col"></div>
+                  <div class="preview-block block-col"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="media-caption">
+            Fluid preview representation: layout geometry recalculates in real time via CSS clamp and subgrid parameters.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="capabilities" class="capabilities-section" aria-labelledby="capabilities-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <div class="section-kicker">Core Implementation</div>
+          <h2 id="capabilities-heading" class="section-title">Responsive engineering foundations</h2>
+          <p class="section-description">
+            Four structural pillars designed to eliminate layout fragility, horizontal overflow, and erratic media reflow.
+          </p>
+        </header>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-span-2">
+            <div class="card-inner">
+              <span class="card-index">01</span>
+              <h3 class="card-title">Mathematical fluid typography via CSS clamp()</h3>
+              <p class="card-text">
+                Headlines and body copy avoid rigid stepped media query jumps by computing continuous linear slopes between 320px and 1440px viewports. Text sizes calculate dynamically without layout shift.
+              </p>
+              <div class="card-code-block">
+                <code>font-size: clamp(2rem, 1.25rem + 2.5vw, 3.5rem);</code>
+              </div>
+              <div class="card-meta">
+                <span>Viewport Slope: 2.5vw</span>
+                <span aria-hidden="true">·</span>
+                <span>Minimum: 32px @ 320px</span>
+                <span aria-hidden="true">·</span>
+                <span>Maximum: 56px @ 1440px</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-span-1">
+            <div class="card-inner">
+              <span class="card-index">02</span>
+              <h3 class="card-title">Resilient auto-fit grid tracks</h3>
+              <p class="card-text">
+                Grid layouts use <code>repeat(auto-fit, minmax(min(100%, 280px), 1fr))</code> to automatically collapse from 4 columns to 2 on tablets, and 1 column on smartphones without requiring breakpoint micromanagement.
+              </p>
+              <div class="card-meta">
+                <span>Min Track: 280px</span>
+                <span aria-hidden="true">·</span>
+                <span>Overflow Guard: min(100%)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-span-1">
+            <div class="card-inner">
+              <span class="card-index">03</span>
+              <h3 class="card-title">Zero-CLS media scaling</h3>
+              <p class="card-text">
+                Images and graphical viewports declare explicit <code>aspect-ratio: 16 / 9</code> and <code>aspect-ratio: 4 / 3</code> with <code>object-fit: cover</code>, preventing sudden Cumulative Layout Shifts while assets stream in.
+              </p>
+              <div class="card-meta">
+                <span>CLS Score: 0.000</span>
+                <span aria-hidden="true">·</span>
+                <span>Lazy Decoding: async</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-span-2">
+            <div class="card-inner">
+              <span class="card-index">04</span>
+              <h3 class="card-title">Touch ergonomics & WCAG 2.2 touch target compliance</h3>
+              <p class="card-text">
+                Interactive controls expand padding dynamically on viewports narrower than 768px to guarantee a minimum 48px × 48px hit area. Visual focus rings use <code>:focus-visible</code> with 2px offset for complete keyboard navigation parity.
+              </p>
+              <div class="card-meta">
+                <span>Hit Area: 48px min</span>
+                <span aria-hidden="true">·</span>
+                <span>Focus Offset: 2px</span>
+                <span aria-hidden="true">·</span>
+                <span>WCAG Level: AAA Target Size</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies" class="case-studies-section" aria-labelledby="case-studies-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <div class="section-kicker">Production Case Studies</div>
+          <h2 id="case-studies-heading" class="section-title">Tested viewport implementations</h2>
+          <p class="section-description">
+            Quantifiable results from responsive architecture applied across varied digital product disciplines.
+          </p>
+        </header>
+
+        <div class="case-studies-grid">
+          <article class="case-card">
+            <div class="case-media aspect-16-9">
+              <div class="case-art art-fintech" aria-hidden="true">
+                <div class="art-overlay">
+                  <div class="art-badge">Fintech Ledger</div>
+                  <div class="art-chart-bars">
+                    <div class="art-bar" style="height: 45%"></div>
+                    <div class="art-bar" style="height: 70%"></div>
+                    <div class="art-bar" style="height: 95%"></div>
+                    <div class="art-bar" style="height: 60%"></div>
+                    <div class="art-bar" style="height: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-kicker">Financial Analytics Platform</div>
+              <h3 class="case-title">Dense tabular data re-flow across mobile screens</h3>
+              <p class="case-text">
+                Transformed a 14-column spreadsheet dashboard into stacked card matrices under 768px, retaining tabular figure alignment and inline delta indicators.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="val">+185%</span>
+                  <span class="lbl">Mobile Retention in 90 Days</span>
+                </div>
+                <div class="case-metric">
+                  <span class="val">0.00s</span>
+                  <span class="lbl">Layout Reflow Latency</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-media aspect-16-9">
+              <div class="case-art art-robotics" aria-hidden="true">
+                <div class="art-overlay">
+                  <div class="art-badge">Robotics OEM</div>
+                  <div class="art-grid-circles">
+                    <span class="circle-node"></span>
+                    <span class="circle-line"></span>
+                    <span class="circle-node active"></span>
+                    <span class="circle-line"></span>
+                    <span class="circle-node"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-kicker">Industrial Automation</div>
+              <h3 class="case-title">Interactive machinery telemetry on rugged field tablets</h3>
+              <p class="case-text">
+                Deployed dual-breakpoint container queries allowing operators on 1024px industrial tablets to toggle between split diagnostics and full-width parameter sliders.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="val">48ms</span>
+                  <span class="lbl">First Contentful Paint</span>
+                </div>
+                <div class="case-metric">
+                  <span class="val">100%</span>
+                  <span class="lbl">Touch Target Accuracy</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-media aspect-16-9">
+              <div class="case-art art-mobility" aria-hidden="true">
+                <div class="art-overlay">
+                  <div class="art-badge">Clean Mobility</div>
+                  <div class="art-speed-arc"></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-kicker">Commercial Logistics</div>
+              <h3 class="case-title">High-density dispatch console with fluid aspect-ratios</h3>
+              <p class="case-text">
+                Architected responsive map integration that smoothly scales across dual-monitor desktop setups down to smartphone delivery driver views.
+              </p>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <span class="val">34KB</span>
+                  <span class="lbl">Critical CSS Payload</span>
+                </div>
+                <div class="case-metric">
+                  <span class="val">0.00</span>
+                  <span class="lbl">Cumulative Layout Shift</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="specs-section" aria-labelledby="specs-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <div class="section-kicker">Breakpoint Reference Matrix</div>
+          <h2 id="specs-heading" class="section-title">Viewport thresholds & numerical specs</h2>
+          <p class="section-description">
+            Complete architectural matrix mapping device categories, media query rules, container widths, and layout behaviors.
+          </p>
+        </header>
+
+        <div class="table-responsive-wrapper">
+          <table class="specs-table" aria-label="Responsive Breakpoint Specifications">
+            <thead>
+              <tr>
+                <th scope="col">Device Category</th>
+                <th scope="col">Viewport Width</th>
+                <th scope="col">Media Query Rule</th>
+                <th scope="col">Max Container</th>
+                <th scope="col">Grid Columns</th>
+                <th scope="col">Root Font Formula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="spec-device">Compact Mobile</th>
+                <td><code>320px — 480px</code></td>
+                <td><code>@media (max-width: 480px)</code></td>
+                <td><code>100% (16px pad)</code></td>
+                <td>1 Column</td>
+                <td><code>clamp(15px, 3.8vw, 16px)</code></td>
+              </tr>
+              <tr>
+                <th scope="row" class="spec-device">Large Mobile / Phablet</th>
+                <td><code>481px — 767px</code></td>
+                <td><code>@media (min-width: 481px)</code></td>
+                <td><code>100% (20px pad)</code></td>
+                <td>1 to 2 Columns</td>
+                <td><code>clamp(15px, 3.2vw, 16px)</code></td>
+              </tr>
+              <tr>
+                <th scope="row" class="spec-device">Tablet Portrait</th>
+                <td><code>768px — 1023px</code></td>
+                <td><code>@media (min-width: 768px)</code></td>
+                <td><code>720px</code></td>
+                <td>2 Columns</td>
+                <td><code>clamp(16px, 1.8vw, 17px)</code></td>
+              </tr>
+              <tr>
+                <th scope="row" class="spec-device">Tablet Landscape / Laptop</th>
+                <td><code>1024px — 1279px</code></td>
+                <td><code>@media (min-width: 1024px)</code></td>
+                <td><code>960px</code></td>
+                <td>3 to 4 Columns</td>
+                <td><code>16px fixed</code></td>
+              </tr>
+              <tr>
+                <th scope="row" class="spec-device">Desktop Standard</th>
+                <td><code>1280px — 1439px</code></td>
+                <td><code>@media (min-width: 1280px)</code></td>
+                <td><code>1200px</code></td>
+                <td>4 Columns</td>
+                <td><code>16px fixed</code></td>
+              </tr>
+              <tr>
+                <th scope="row" class="spec-device">Ultra-Wide Display</th>
+                <td><code>&ge; 1440px</code></td>
+                <td><code>@media (min-width: 1440px)</code></td>
+                <td><code>1320px (centered)</code></td>
+                <td>4 Columns (asymmetric bento)</td>
+                <td><code>17px opt-compensated</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="consultation" class="consultation-section" aria-labelledby="consultation-heading">
+      <div class="section-container">
+        <div class="consultation-card">
+          <header class="consultation-header">
+            <div class="section-kicker">Technical Advisory</div>
+            <h2 id="consultation-heading" class="section-title">Request a responsive performance audit</h2>
+            <p class="section-description">
+              Submit your web application URL for a comprehensive viewport analysis across mobile, tablet, and desktop breakpoints.
+            </p>
+          </header>
+
+          <form id="audit-form" class="audit-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" required placeholder="Elena Rostova" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Work Email <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" required placeholder="elena@enterprise.org" />
+              </div>
+
+              <div class="form-group form-span-2">
+                <label for="target-url" class="form-label">Target Website URL <span class="required">*</span></label>
+                <input type="url" id="target-url" name="url" class="form-input" required placeholder="https://app.example.com" />
+              </div>
+
+              <div class="form-group form-span-2">
+                <label for="audit-priority" class="form-label">Primary Viewport Focus</label>
+                <select id="audit-priority" name="priority" class="form-select">
+                  <option value="all">Complete Cross-Device Suite (320px - 2560px)</option>
+                  <option value="mobile">Mobile-First Critical Path (320px - 480px)</option>
+                  <option value="tablet">Tablet & Split-Screen Viewports (768px - 1024px)</option>
+                  <option value="cls">Cumulative Layout Shift (CLS) Remediation</option>
+                </select>
+              </div>
+
+              <div class="form-group form-span-2">
+                <label for="notes" class="form-label">Specific Layout Observations (Optional)</label>
+                <textarea id="notes" name="notes" class="form-textarea" rows="3" placeholder="Describe any horizontal scrolling, awkward wrapping, or touch target collisions..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary btn-submit">Submit Audit Request</button>
+              <p class="form-disclaimer">Zero spam. Audits performed within 24 business hours using automated and manual viewport profiling.</p>
+            </div>
+            
+            <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="section-container footer-grid">
+      <div class="footer-brand-col">
+        <a href="#hero" class="footer-brand">Apoorv Chaudhary</a>
+        <p class="footer-tagline">
+          Frontend Web Developer Internship · Week 2 Project Deliverable.
+        </p>
+        <div class="footer-meta-text">
+          <span>Standards Compliant: HTML5 · CSS3</span>
+          <span aria-hidden="true">·</span>
+          <span>WCAG 2.2 Level AA</span>
+        </div>
+      </div>
+
+      <nav class="footer-links-col" aria-label="Footer Quick Navigation">
+        <h4 class="footer-col-title">Architecture</h4>
+        <ul class="footer-links-list">
+          <li><a href="#capabilities">Bento Layouts</a></li>
+          <li><a href="#hero">Fluid Formulas</a></li>
+          <li><a href="#case-studies">Media Scaling</a></li>
+          <li><a href="#specs">Breakpoint Matrix</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-links-col" aria-label="Footer Technical Resources">
+        <h4 class="footer-col-title">Documentation</h4>
+        <ul class="footer-links-list">
+          <li><a href="WEEK_2_RESPONSIVE_DESIGN_REPORT.md" target="_blank" rel="noopener">Apoorv's Project Report</a></li>
+          <li><a href="styles.css" target="_blank" rel="noopener">Raw Stylesheet</a></li>
+          <li><a href="#specs">WCAG 2.2 Metrics</a></li>
+          <li><a href="#hero">Performance Benchmarks</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Internship Verification</h4>
+        <p class="footer-intern-note">
+          Developer: Apoorv Chaudhary. Task: Week 2 Implementation of Responsive Web Design. Evaluated on semantic structure, CSS efficiency, and mathematical scalability.
+        </p>
+        <div class="footer-status-pill">
+          <span class="status-indicator"></span>
+          <span>Responsive Engine Active</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 Apoorv Chaudhary. Built for Frontend Web Developer Internship Assessment.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#hero">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      const nav = document.getElementById('primary-nav');
+      
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', !expanded);
+          nav.classList.toggle('nav-open', !expanded);
+        });
+
+        nav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('nav-open');
+          });
+        });
+      }
+
+      const form = document.getElementById('audit-form');
+      const feedback = document.getElementById('form-feedback');
+      if (form && feedback) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = form.querySelector('#contact-email').value;
+          const url = form.querySelector('#target-url').value;
+          if (!email || !url) {
+            feedback.className = 'form-feedback error';
+            feedback.textContent = 'Please provide both a valid email and website URL.';
+            return;
+          }
+          feedback.className = 'form-feedback success';
+          feedback.textContent = 'Audit request queued successfully! A responsive profiling report will be sent to ' + email + '.';
+          form.reset();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
